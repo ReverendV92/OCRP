@@ -1,0 +1,83 @@
+
+"ocrp"
+{
+
+	"base" "base" // The gamemode you're deriving from. This will usually be base or sandbox. 
+	
+    "title" "Orange Cosmos RP" // The 'nice' title of your gamemode. Can contain spaces and capitals. 
+	
+    "maps" "rp_rockford_v2b" // The map filter for your gamemode. This is used to correctly categorise maps in the map selector. This should only be set if the maps are unique to your gamemode. 
+	
+    "menusystem" "1" // Include and set to 1 if this gamemode should be selectable from the main menu 
+	
+	"workshopid" "930052371" // Optional. If your gamemode is on Workshop then this should be the workshopid of the file. (You won't have a workshopid until you upload - so you will need to set this in an update) 
+	
+	"settings"
+	{
+
+		1
+		{
+			"name"		"ocrp_disablesmoke"
+			"text"		"Disable Smoke"
+			"help"		"(Admin) Disable OCRP smoke effect from fire (improves FPS)"
+			"type"		"CheckBox"
+			"default"	"0"
+		}
+
+		2
+		{
+			"name"		"ocrp_advlights"
+			"text"		"Enhanced Lights"
+			"help"		"(Admin) Only displays the sprites if the driver is present (reduces lag)"
+			"type"		"CheckBox"
+			"default"	"1"
+		}
+
+		3
+		{
+			"name"		"ocrp_radiosenabled"
+			"text"		"Radios Enabled"
+			"help"		"(Client) Enable/disable radios"
+			"type"		"CheckBox"
+			"default"	"1"
+		}
+
+		4
+		{
+			"name"		"ocrp_radiovol"
+			"text"		"Radio Volume"
+			"help"		"(Client) Radio volume percent"
+			"type"		"Integer"
+			"default"	"100"
+		}
+
+		5
+		{
+			"name"		"ocrp_maxradios"
+			"text"		"Radio Maximum"
+			"help"		"(Client) Maximum radios"
+			"type"		"Integer"
+			"default"	"1"
+		}
+
+		6
+		{
+			"name"		"ocrp_maxradiodupes"
+			"text"		"Radio Max Dupes"
+			"help"		"(Client) Maximum station duplication"
+			"type"		"Integer"
+			"default"	"2"
+		}
+
+		7
+		{
+			"name"		"ocrp_maxradiodistance"
+			"text"		"Radio Distance"
+			"help"		"(Client) Radio audible distance"
+			"type"		"Integer"
+			"default"	"1000"
+		}
+
+	}
+
+}

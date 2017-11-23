@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	// Original shader: VertexLitTexture
+	"$basetexture" "models/redninja/players/female/Fem_Survivor6"
+	"$halflambert" 1
+}
