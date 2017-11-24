@@ -360,7 +360,7 @@ function SWEP:PrimaryAttack( )
 		if ( self.Owner:GetPos( ) - TraceResult.HitPos ):Length( ) < 25 then
 
 			vm:ResetSequence( vm:LookupSequence( "knock" ) )	
-			-- self:SpecialAnimation( "knock" )
+			-- self:PlayRandomSequence( "knock" )
 			
 			local KnockSoundType = KnockSoundType or "VNT.Unarmed.Knock"
 			

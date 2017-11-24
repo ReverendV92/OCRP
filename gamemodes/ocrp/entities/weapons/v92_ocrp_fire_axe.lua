@@ -73,7 +73,7 @@ SWEP.Secondary.PureDmg = 50 -- (Integer) Base damage, put one number here and th
 ------------------------------------------------------
 
 SWEP.Weight = 1 -- (Integer) The weight in Kilogrammes of our weapon - used in my weapon weight mod!
-SWEP.StoppageRate = 0 -- (Integer) Rate of stoppages in the weapon, look up the real world number estimations and just throw that in here.
+SWEP.Settings.Jamming.MeanRateOfFailure = 0 -- (Integer) Rate of stoppages in the weapon, look up the real world number estimations and just throw that in here.
 
 ------------------------------------------------------
 --	Melee Settings									--
@@ -121,7 +121,7 @@ function SWEP:Initialize( )
 	self.HoldMeRight = VNTCB.HoldType.Sword -- (String) Hold type table for our weapon, Lua/autorun/sh_v92_base_swep.Lua
 end
 
-SWEP.SeqPrimary = { "swing_w_e" , "swing_ne_w" , "swing_se_w" , "swing_sw_e" , "swing_w_e" , "swinghard_n_s" }
-SWEP.SeqIdle = { "idle" }
-SWEP.SeqDraw = { "deploy" }
-SWEP.SeqHolster = { "deploy" }
+SWEP.Sequences.Primary = { "swing_w_e" , "swing_ne_w" , "swing_se_w" , "swing_sw_e" , "swing_w_e" , "swinghard_n_s" }
+SWEP.Sequences.Idle = { "idle" }
+SWEP.Sequences.Draw = { "deploy" }
+SWEP.Sequences.Holster = { "deploy" }

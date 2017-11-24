@@ -68,7 +68,7 @@ function SWEP:Initialize()
 end 
 
 function SWEP:Deploy()
-	--self.Weapon:EmitSound(self.DeploySound,100,math.random(90,120))
+	--self.Weapon:EmitSound(self.Settings.Parachute.Sounds.Deploy,100,math.random(90,120))
 	self.Hidden = true
 	if SERVER then
 		self:DrawShadow( false )

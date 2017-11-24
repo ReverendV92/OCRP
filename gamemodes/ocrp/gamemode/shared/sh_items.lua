@@ -161,7 +161,7 @@ GM.OCRP_Items["item_ammo_9x19mm"] = {
 	["Model"] = "models/items/boxsrounds.mdl" ,-- The model
 	["Price"] = 20 ,--Price
 	["Weight"] = 0 ,
-	["AmmoType"] = "9x19mmnato" ,
+	["AmmoType"] = "9x19mm_fmj" ,
 	-- what it does don't touch it.
 	["DoesntSave"] = true ,
 	["Condition"] = function(ply,item) -- Checks to see if the player can use it.

@@ -313,7 +313,7 @@ AddGear(" Unhandcuff player", "Aim at a player to un-handcuff him.", false,
 AddGear(" Siren/Lights Off", "Aim to Turn Siren/Lights Off", false,
 	function ( Player, Trace )
 			if IsValid(Trace.Entity) and Trace.Entity:IsGovCar() then
-                local TTbl = {} for k,v in pairs(Trace.Entity.VC_Script.Siren.Sequences) do if v.Codes then table.Merge(TTbl, table.Copy(v.Codes)) end end
+                local TTbl = {} for k,v in pairs(Trace.Entity.VC_Script.Siren.Sequences.uences) do if v.Codes then table.Merge(TTbl, table.Copy(v.Codes)) end end
                 local HasNoCodes = false if table.Count(TTbl) == 0 then HasNoCodes = true end
                 VC_ELS_Lht_SetCode(Trace.Entity, 0, HasNoCodes)
                 -- For some reason setting sound code doesn't work, so we just toggle it a few times instead
