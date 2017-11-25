@@ -1,0 +1,57 @@
+// Created by Crowbar 0.36.0.0
+
+$ModelName "jessev92/dynrp/characters/lasership/male_01.mdl"
+
+$model "Head" "male_01_reference.smd" {
+
+	eyeball "eye_right" "ValveBiped.Bip01_Head1" -1.300000 -3.790007 66.383006 "eyeball_r" 1 4 "iris_unused" 0.59
+	eyeball "eye_left" "ValveBiped.Bip01_Head1" 1.300000 -3.790008 66.383006 "eyeball_l" 1 -4 "iris_unused" 0.59
+
+	flexfile "male_01.vta" 
+	{
+		defaultflex frame 0
+		flex "jaw_drop" frame 1
+	}
+
+	flexcontroller phoneme range 0 1 jaw_drop
+	flexcontroller phoneme range 0 1 blank
+
+	localvar blank
+	%jaw_drop = jaw_drop
+	%blank = blank
+}
+
+$BodyGroup "Body"
+{
+	studio "male_01_busdriver.smd"
+}
+
+$CDMaterials "models/jessev92/dynrp/characters/common"
+$CDMaterials "models/jessev92/dynrp/characters/lasership"
+
+$pushd "..\..\..\characters\common"
+$include "..\..\..\characters\common/Humans\Male\ragdoll.qci"
+$include "..\..\..\characters\common/Humans\Male\hitbox.qci"
+$include "..\..\..\characters\common/Humans/standardhierarchy.qci"
+$include "..\..\..\characters\common/humans/standardikchains.qci"
+$include "..\..\..\characters\common/humans/male/commonbones.qci"
+$proceduralbones "humans/male.vrd"
+$popd
+
+$include "optimization.qci"
+
+$includemodel "m_anm.mdl"
+//$includemodel "player/male_anims.mdl"
+//$includemodel "player/male_gestures.mdl"
+//$includemodel "player/male_postures.mdl"
+//$includemodel "player/male_shared.mdl"
+//$includemodel "player/male_ss.mdl"
+//$includemodel "humans/male_shared.mdl"
+//$includemodel "humans/male_ss.mdl"
+//$includemodel "humans/male_gestures.mdl"
+//$includemodel "humans/male_postures.mdl"
+
+$surfaceprop "flesh"
+$bbox -13 -13 0  13 13 72
+$eyeposition 0 0 70
+$mostlyopaque
