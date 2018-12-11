@@ -1,0 +1,5 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/sickness/doorframe_02"
+	"$surfaceprop" "Wood"
+}

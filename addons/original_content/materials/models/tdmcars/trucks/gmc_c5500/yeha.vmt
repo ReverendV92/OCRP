@@ -1,0 +1,22 @@
+"VertexlitGeneric"
+{
+	"$basetexturetransform" "center .5 .5 scale 50 50 rotate 0 translate 0 0"
+	"$basetexture" "models/tdmcars/trucks/gmc_c5500/yeha"
+	"$bumpmap" "models/tdmcars/shared/skin_normal"
+	"$phong" 1
+	"$phongexponent" 50
+	"$phongboost"	0.7
+	"$phongfresnelranges" "[1 1 1]"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[0.01 0.01 0.01]"
+	"$normalmapalphaenvmapmask" 1
+	"$colorfix" "{255 255 255}"
+	"Proxies"
+	{
+		"Equals"
+		{
+			srcVar1 $colorfix
+			resultVar	$color
+		}
+	}
+}

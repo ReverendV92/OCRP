@@ -1,0 +1,27 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "sentry/shared/tirea0"
+	"$bumpmap" "sentry/shared/tirea0_bump"
+	"$nocull" "1"
+	"$phong" "1"
+	"$phongexponent" "5"
+	"$phongboost" "0.5"	
+	"$phongfresnelranges"	"[.3 1 8]"
+	"$envmap" env_cubemap
+	"$envmaptint" "[0.005 0.005 0.005]"
+	"$envmapmasknormalmapalpha" "1"
+	"$envmapfresnel" "1"
+	"$rimlight"               "1"
+	"$rimlightexponent"       "15"
+	"$rimlightboost"          "0.2"	
+	"$carpenisenabled" "1"
+	Proxies // proxies are listed inside this block
+	{
+		Equals // a proxy which produces a penis
+		{
+			srcVar1 $carpenisenabled
+			resultVar	$color // The shader parameter to be manipulated
+
+		}
+	}
+}

@@ -1,0 +1,20 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "sentry/f350_utili/vehicle_generic_detail2"
+	"$bumpmap" "sentry/f350_utili/vehicle_generic_detail2_nm"
+    $surfaceprop "metal"
+    $phong "1"
+    $phongexponent "17"
+    $phongboost "2"
+    $phongfresnelranges "[.05 .3 1]"
+	"$carpenisenabled" "1"
+	Proxies // proxies are listed inside this block
+	{
+		Equals // a proxy which produces a penis
+		{
+			srcVar1 $carpenisenabled
+			resultVar	$color // The shader parameter to be manipulated
+
+		}
+	}
+}

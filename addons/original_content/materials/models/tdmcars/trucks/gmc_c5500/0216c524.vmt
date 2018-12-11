@@ -1,0 +1,12 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/tdmcars/trucks/gmc_c5500/0216c524"
+	"$bumpmap" "models/tdmcars/trucks/gmc_c5500/0216c524_nrm"
+	"$blendtintbybasealpha" 1
+	"$nodecal" "1"
+	"$halflambert" 1
+	"$phong" "1" 
+	"$phongboost" "1" 
+	"$phongfresnelranges" "[1 1 1]" 
+	"$phongexponent" 8
+}

@@ -1,0 +1,10 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/tdmcars/trucks/gmc_c5500/plywood"
+	"$bumpmap"    "models/tdmcars/trucks/gmc_c5500/plywood_nrm"
+	"$blendtintbybasealpha" 1
+	"$phong" "1" 
+	"$phongboost" "2" 
+	"$phongfresnelranges" "[1 1 1]" 
+	"$phongexponent" 10
+}

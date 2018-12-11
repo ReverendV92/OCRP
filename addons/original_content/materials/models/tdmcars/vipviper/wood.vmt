@@ -1,0 +1,11 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/tdmcars/vipviper/wood"
+	"$bumpmap"    "models/tdmcars/vipviper/wood_nrm"
+	"$nodecal" "1"
+	"$blendtintbybasealpha" 1
+	"$phong" "1" 
+	"$phongboost" "5" 
+	"$phongfresnelranges" "[.3 .5 1]" 
+	"$phongexponent" 5
+}

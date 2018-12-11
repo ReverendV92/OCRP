@@ -1,0 +1,6 @@
+"vertexlitGeneric"
+{
+	"$basetexture" "models/gtaiv/vehicles/stockade/pstockade_livery"
+	"$decal" "1"
+	"$translucent" "1"
+}
